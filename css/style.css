@@ -939,4 +939,30 @@ flex: 0 0 100%;
   }
 }
 
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.sticky-button a {
+    display: inline-block;
+    background-color: #d91515;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.sticky-button a i {
+    font-size: 20px;
+}
+
+.sticky-button a:hover {
+    background-color: #0920b5;
+}
+
 

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Cards</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d91515;
+            color: #fff;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            text-decoration: none;
+            font-style: none;
+
+        }
+
+        .btn:hover {
+            background-color: #0920b5;
+            color: #fff;
+            border-color: #0920b5;
+        }
+
+
+        /* Media Query for Phones */
+        @media only screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            .card-content {
+                padding: 10px;
+            }
+
+            .card-title {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            .card-text {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+
+            .btn {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="../assets/photo1.webp" alt="Fitness Plan" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Fitness Plan</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="../fitness.html" class="btn">Start Journey</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="../assets/bmi.jpg" alt="BMI" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">BMI</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="../bmi.html" class="btn">Calculate</a>
+            </div>
+        </div>
+
+        <!-- Repeat for Card 3 to Card 9 -->
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="../assets/food.jpeg" alt="Calorie One" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Calorie One</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="../caloriesOne/index.html" class="btn">Track</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="../assets/chat.webp" alt="Discussion Appointment" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Discussion Appointment</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="trainers.html" class="btn">Book</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="../assets/transformation.jpg" alt="Clients Transformation" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Clients Transformation</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="../transform.html" class="btn">Show More</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <!-- <div class="card">
+            <img src="assets/planner.gif" alt="Card Title 6" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 6</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div> -->
+
+        <!-- Card 7 -->
+        <!-- <div class="card">
+            <img src="assets/planner.gif" alt="Card Title 7" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 7</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div> -->
+
+        <!-- Card 8 -->
+        <!-- <div class="card">
+            <img src="assets/planner.gif" alt="Card Title 8" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 8</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+         Card 9 -->
+        <!-- <div class="card">
+            <img src="assets/planner.gif" alt="Card Title 9" class="card-img">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 9</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    semper nisl. Aliquam erat volutpat.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>
